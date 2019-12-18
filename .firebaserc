@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myapp-3943c": {
+      "hosting": {
+        "myapp": [
+          "myapp-3943c"
+        ]
+      }
+    }
+  }
+}
