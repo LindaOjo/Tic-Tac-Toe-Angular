@@ -1,0 +1,39 @@
+<h1>Will the Conductor give the Passenger their change? Play and find out!</h1>
+
+  
+<button nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+
+
+<h2 *ngIf="winner === 'Gimme Change'">
+  Passenger won the game! <h4>Conductor! give them {{roundedChange}} Naira change now</h4>
+
+</h2>
+<h2 *ngIf="winner === 'No Change'">
+  Conductor won the game! <h4>Sorry Passenger, the conductor got away with your {{roundedChange}} Naira change </h4>
+</h2>
+
+<h2 *ngIf="draw === 9 && !winner">
+  It's a draw
+</h2>
+
+
+
+<main>
+  <app-square *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+
+  </app-square>
+</main>
+
+<h3><br>Instructions</h3>
+<ul>
+    <li><h5> This is the Lagos-version of Tic-Tac-Toe.</h5></li>
+    <li><h5>The game is played on a grid that's 3 squares by 3 squares. It's a two-player game.</h5></li>
+    <li><h5>First player is the Passenger, second player is the Conductor. Players take turns putting their marks in empty
+    squares.</h5></li>
+    <li><h5>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</h5></li>
+</ul>
+  
+  
+  
+ 
+

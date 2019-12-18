@@ -1,1 +1,49 @@
+@media only screen and (max-width: 600px) {
+  * {
+    background-color: rgb(10, 14, 54);
+    padding: 0;
+    margin: 0;
+  }
+
+  nb-layout-footer.fixed {
+    display: none;
+  }
+
+  nb-layout-column {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  html {
+    width: 100vh;
+    display: flex-box;
+    justify-content: center;
+
+  }
+
+  main {
+    width: auto;
+  }
+}
+
+
+
+
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+}
+
+;
+
 /* You can add global styles to this file, and also import other style files */
+.nb-theme-cosmic [nbButton].appearance-hero.status-success {
+  background-image: linear-gradient(to right, #2ce698f5, #00d68f);
+  border: none;
+  box-shadow: 0 0 0 0 #00b887, 0 0 0 0 #00997a, 0 0 transparent;
+  color: #ffffff;
+}
