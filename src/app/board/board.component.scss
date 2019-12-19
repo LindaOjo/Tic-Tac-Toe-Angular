@@ -1,43 +1,49 @@
 main {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-gap: 0px;
-    padding: 0;
-    width: 100%;
-    margin:0;
-}
-  
-app-square {
-    border: 1px gray solid;
-    height: 200px;
-    margin:0;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0px;
+  padding: 0;
+  width: 100%;
+  margin: 0;
 }
 
-figure{
-    display: inline;
+app-square {
+  border: 1px gray solid;
+  height: 200px;
+  margin: 0;
+}
+
+figure {
+  display: inline;
+}
+
+h2,
+h4 {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 @media only screen and (max-width: 600px) {
-    main {
-      padding-top: 10vh;
-    }
-    h2, h3, h4{
-        margin: 5vh 0;
-    }
+  main {
+    padding-top: 10vh;
   }
 
-  h2, h4 {
-    color: #fff;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+  h2,
+  h3,
+  h4 {
+    margin: 5vh 0;
   }
-  
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
-    }
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
   }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
+  }
+}

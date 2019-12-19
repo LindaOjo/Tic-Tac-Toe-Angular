@@ -32,10 +32,6 @@ export class BoardComponent implements OnInit {
     return this.xIsNext ? 'Gimme Change' : 'No Change';
   }
 
-  get playerName() {
-    return this.xIsNext ? 'Passenger' : 'Conductor';
-  }
-
 
   makeMove(idx: number) {
     if (!this.squares[idx]) {
